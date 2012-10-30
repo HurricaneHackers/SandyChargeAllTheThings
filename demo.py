@@ -30,9 +30,12 @@ def main():
 def on_connect(session, task, item):
     #session.add_image(image_array[random.randint(1, len(image_array)-1)], decorated=False)
     session.add_image("http://sukey.io/webapp/images/app/sayit.png", decorated=False)
-    session.add_text("", boxed=True)
-    session.add_camera_button("image")
-    session.add_submit_button("Upload")
+    # session.add_text("", boxed=True)
+    session.add_list_button('have_power', 'give_or_take', 'I have power!', subtitle=None, on_submit='')
+    session.add_list_button('need_power', 'give_or_take', 'I need power!', subtitle=None, on_submit='')
+
+    # session.add_camera_button("image")
+    # session.add_submit_button("Upload")
 
 
 def on_submit(session, task, form_data):
