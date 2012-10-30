@@ -11,4 +11,20 @@ to: PowerOutageMaps.js (geoJSON)
 
 geoJSON Map Layers (dynamic)
 ----------------------------
-there will be a layer populated by people who submit the human.io forms.
+TODO: There will be a layer populated by people who submit the human.io forms.
+
+Suggested Implementation:
+*human.io to ask for submissions / contributions from people.
+*pubnub to push updates from the client to the dB
+*mongoDB to store crowd-source POIs
+*leaflet.js
+
+References
+----------
+http://www.geojson.org/
+
+http://leafletjs.com/
+
+http://human.io/docs/python
+
+http://ogre.adc4gis.com/
